@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Eduford</title>
+
+    <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header" id="home">
+     <nav>
+         <a href="index.html"><img src="images/logo.png"></a>
+         <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="#home">HOME</a></li>
+                 <li><a href="#courses">COURSE</a></li>
+                 <li><a href="#campuses">CAMPUSES</a></li>
+                 <li><a href="#aboutus">ABOUT US</a></li>
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+     </nav>
+     <div class="text-box">
+         <h1>World's biggest university</h1>
+         <p>Learning websites is one of the easiest thing you can do now. You just need 
+             to learn </br>HTML,CSS,Javascript and you're good to go.</p>
+             <a href="#" class="hero-btn">Learn More</a>
+     </div>
+    </section>
+
+    <!----Course-->
+    <section class="course" id="courses">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum edrfth heser dert lihd rthe tey nmhmond</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Font Awesome is designed to be used with inline elements. elements are widely used for icons.
+            </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Font Awesome is designed to be used with inline elements. The  elements are widely used for icons.
+                    </p>
+            </div>
+            <div class="course-col">
+                <h3>Post-Graduate</h3>
+                <p>Font Awesome is designed to be used with inline elements. The elements are widely used for icons.
+                 Same things goes for shadow, and anything else that gets inherited using CSS</p>
+            </div>
+        </div>
+    </section>
+<!------------------Campus-->
+  <section class="campus" id="campuses">
+        <h1>Our Global Campuses</h1>
+        <p class="campus-title">Same things goes for shadow, and anything else that gets inherited using CSS</p>
+        <div class="row">
+        <div class="campus-col">
+        <img src="images/london.png">
+        <div class="campus-details">
+            <h4>London</h4>
+            <p>Same things goes for shadow, and anything else that gets inherited using CSS</p>
+        </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/newyork.png">
+            <div class="campus-details">
+                <h4>NewYork</h4>
+                <p>Same things goes for shadow, and anything else that gets inherited using CSS</p>
+            </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png">
+                <div class="campus-details">
+                    <h4>Washington</h4>
+                    <p>Same things goes for shadow, and anything else that gets inherited using CSS</p>
+                </div>
+                </div>
+            </div>
+   </section>
+    <!------------Reviews----->
+     <section class="facilities" id="aboutus">
+         <h1>Our Facilities</h1>
+         <p>Same things goes for shadow, and anything else that gets inherited using CSS</p>
+         <div class="row">
+             <div class="facilities-col">
+                 <img src="images/library.png">
+                 <h4>World Class Library</h4>
+                 <p class="facility-details">Font Awesome is designed to be used with inline elements. The elements are widely used for icons</p>
+             </div>
+             <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h4>Largest Playground</h4>
+                <p class="facility-details">Font Awesome is designed to be used with inline elements. The elements are widely used for icons</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h4>Tasty and Healthy Foods</h4>
+                <p class="facility-details">Font Awesome is designed to be used with inline elements. The elements are widely used for icons</p>
+            </div>
+         </div>
+     </section>
+      <footer class="footer">
+          <div class="row-footer">
+              <div class="footer-col">
+                  <h5>Our Links</h5>
+                  <ul>
+                      <li class="linkitem">HOME</li>
+                      <li class="linkitem">ABOUT US</li>
+                      <li class="linkitem">COURSE</li>
+                      <li class="linkitem">CONTACT US</li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                <h5>Talk to Us</h5>
+                <ul>
+                    <li><i class="fa fa-map-marker"></i>  Harwing street hodeck, Nairobi Kenya</li>
+                    <li><i class="fa fa-phone"></i>  0724345566</li>
+                    <li><i class="fa fa-envelope"></i>  info@eduford.com</li>
+                    
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h6>Subscribe to our Newsletter</h6>
+                <form>
+                    <input type="text" name="email" placeholder="johndoe@gmail.com" class="sub-email">
+                    <a href="" class="sub-btn">Subscribe</a>
+                </form>
+            </div>
+          </div>
+          <div class="border">
+              <p>copyrights reserved @Eduford 2022</p>
+          </div>
+          
+      </footer>
+
+
+  <!---Javascript for menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
